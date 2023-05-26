@@ -14,7 +14,7 @@ body{
     left: -240px;
     width: 240px;
     height: 100%;
-     background:rgba(0, 0, 0, 0.1);
+     background: rgba(0, 0, 0, 0.1);
      transition: all .5s ease;
   }
   .slidebar header{
@@ -94,15 +94,20 @@ body{
     color: white;
   }
   .box {
-    position:absolute;
-    width: 650px;
+    display: flex;
+    position: absolute;
+    width: 350px;
     height: 400px;
-    margin-left: 340px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
-    
 }
+
 .box::before {
     content: '';
     position: absolute;
